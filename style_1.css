@@ -1,0 +1,102 @@
+/* Styling Dasar */
+body {
+    font-family: Arial, sans-serif;
+    /* Gradien Biru Gelap yang mirip dengan gambar */
+    background: linear-gradient(180deg, #1c3664 0%, #0d1e3f 100%); 
+    color: #ffffff;
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 450px; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Header Profil */
+.profile-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-picture {
+    width: 90px;
+    height: 90px;
+    background-color: #38bdf8; /* Warna latar belakang ikon */
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #ffffff;
+    border: 3px solid #ffffff; 
+}
+
+.profile-header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Daftar Tautan (Link List) */
+.link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.link-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    /* Latar belakang tombol transparan dan border */
+    background-color: rgba(255, 255, 255, 0.15); 
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.1s;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+}
+
+.link-button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+.icon-placeholder {
+    /* Mengatur placeholder ikon */
+    width: 25px; 
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 16px;
+    /* Warna yang lebih terang untuk ikon agar kontras */
+    color: #38bdf8; 
+}
+
+.link-button span {
+    flex-grow: 1; 
+    text-align: left;
+}
+
+/* Ikon panah > di sisi kanan */
+.link-button::after {
+    content: '>';
+    margin-left: auto;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7);
+}
